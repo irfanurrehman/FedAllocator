@@ -1,5 +1,5 @@
-#ifndef __MASTER_ALLOCATOR_MESOS_HIERARCHICAL_FILTER_HPP__
-#define __MASTER_ALLOCATOR_MESOS_HIERARCHICAL_FILTER_HPP__
+#ifndef __MASTER_ALLOCATOR_MESOS_HIERARCHICAL_FEDALLOC_HPP__
+#define __MASTER_ALLOCATOR_MESOS_HIERARCHICAL_FEDALLOC_HPP__
 
 #include <mesos/mesos.hpp>
 #include <mesos/module.hpp>
@@ -38,4 +38,4 @@ class FederationAllocator : public HierarchicalDRFAllocatorProcess
 
 }; // class FilterFramework
 
-#endif // __MASTER_ALLOCATOR_MESOS_HIERARCHICAL_FILTER_HPP__
+#endif // __MASTER_ALLOCATOR_MESOS_HIERARCHICAL_FEDALLOC_HPP__
