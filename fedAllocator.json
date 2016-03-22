@@ -1,7 +1,7 @@
 {
    "libraries": [
      {
-       "file": "./libFedAllocatorModule.so",
+       "file": "../../FedModules/FedAllocator/libFedAllocatorModule.so",
        "modules": [ 
          {
            "name": "FedAllocatorModule"
