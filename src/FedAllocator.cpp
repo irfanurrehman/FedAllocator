@@ -16,6 +16,19 @@ void FederationAllocator::addFramework(const FrameworkID& frameworkId,
     std::cout << "   :::::: HC#03 -- OUR addFramework method is called" << std::endl;
 }
 
+void FederationAllocator::updateGlobalValue(int val)
+{
+    std::cout << "%%%% [before] The current value of Global var 'fedVal' = " << fedVal << std::endl;
+    // update new value here now
+    fedVal = val;
+    std::cout << "%%%% [after] The current value of Global var 'fedVal' = " << fedVal << std::endl;
+}
+
+int FederationAllocator::getGlobalValue()
+{
+        return fedVal;
+}
+
 
 static Allocator* createAllocator(const Parameters& parameters)
 {

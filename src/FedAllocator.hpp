@@ -26,6 +26,7 @@ class FederationAllocator;
 typedef HierarchicalAllocatorProcess<DRFSorter, DRFSorter> HierarchicalDRFAllocatorProcess;
 typedef MesosAllocator<FederationAllocator> FilterOffersFedAlloc;
 
+static int fedVal;
 
 class FederationAllocator : public HierarchicalDRFAllocatorProcess 
 {
@@ -35,6 +36,8 @@ class FederationAllocator : public HierarchicalDRFAllocatorProcess
 			      const FrameworkInfo& frameworkInfo,
 			      const hashmap<SlaveID, Resources>& used);
 
+    static void updateGlobalValue(int val);
+    static int getGlobalValue();
 
 }; // class FilterFramework
 
